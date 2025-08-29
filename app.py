@@ -120,7 +120,7 @@ Provide a **detailed text report** in the following structure:
 
 # df_dict = pd.read_csv('Service_Data_Dictionary.csv')
 # df_table = pd.read_csv('Service_Data_Dictionary_tables.csv')
-df_data = pd.read_csv('Chetak_VIN_Battery_20250820_Local.csv')
+df_data = pd.read_csv('Battery_Data_Short.csv')
 
 def generate_answer(user_query, max_words):
     answer = llm_answer(user_query, max_words, df_data)
@@ -137,4 +137,5 @@ st.header("Ask a Question about Chetak Battery Failures ")
 user_question=st.text_input("Ask a Question from Chetak Battery Failures")
 if user_question:
     user_input(user_question)
+
 
